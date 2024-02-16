@@ -1,0 +1,57 @@
+.signup-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative; /* Added */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: calc(100% - 40px); /* Adjusted */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-password-visibility {
+  /* border: 2px solid #ccc; */
+  position: absolute;
+  top: 70%;
+  right: 22px; /* Adjusted */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
